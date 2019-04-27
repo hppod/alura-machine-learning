@@ -2,6 +2,7 @@
 # seis elementos que conhecemos
 # 3 variaveis -> é gordinho? tem perna curta? faz au au?
 
+from sklearn.naive_bayes import MultinomialNB
 porco1 = [1, 1, 0]
 porco2 = [1, 1, 0]
 porco3 = [1, 1, 0]
@@ -17,12 +18,12 @@ marcacoes = [1, 1, 1, -1, -1, -1]
 
 # elemento misterioso, será que ele é cachorro ou porco?
 misterioso = [1, 1, 1]
+misterioso2 = [1, 0, 0]
 
 # importando o algoritmo de treinamenot
-from sklearn.naive_bayes import MultinomialNB
 
 modelo = MultinomialNB()
 
 modelo.fit(dados, marcacoes)
-
-print(modelo.predict(misterioso))
+teste = [misterioso, misterioso2]
+print(modelo.predict(teste))
