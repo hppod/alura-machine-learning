@@ -20,3 +20,5 @@ misterioso = [1, 1, 1]
 
 # importando o algoritmo de treinamenot
 from sklearn.naive_bayes import MultinomialNB
+
+modelo = MultinomialNB()
