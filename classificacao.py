@@ -9,4 +9,11 @@ cachorro1 = [1, 1, 1]
 cachorro2 = [0, 1, 1]
 cachorro3 = [0, 1, 1]
 
+# definindo o array de varios dados
 dados = [porco1, porco2, porco3, cachorro1, cachorro2, cachorro3]
+
+# +1 para dizer que é porco e -1 para dizer que é cachorro
+marcacoes = [1, 1, 1, -1, -1, -1]
+
+# elemento misterioso, será que ele é cachorro ou porco?
+misterioso = [1, 1, 1]
