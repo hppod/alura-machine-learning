@@ -22,4 +22,7 @@ misterioso = [1, 1, 1]
 from sklearn.naive_bayes import MultinomialNB
 
 modelo = MultinomialNB()
+
 modelo.fit(dados, marcacoes)
+
+print(modelo.predict(misterioso))
