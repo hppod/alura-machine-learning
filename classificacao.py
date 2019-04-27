@@ -17,3 +17,6 @@ marcacoes = [1, 1, 1, -1, -1, -1]
 
 # elemento misterioso, será que ele é cachorro ou porco?
 misterioso = [1, 1, 1]
+
+# importando o algoritmo de treinamenot
+from sklearn.naive_bayes import MultinomialNB
