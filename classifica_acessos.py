@@ -1,6 +1,13 @@
 from sklearn.naive_bayes import MultinomialNB
 from dados import carregar_acessos
+
 x, y = carregar_acessos()
+
+treino_dados = x[:90]
+treino_marcacoes = y[:90]
+
+teste_dados = x[-9:]
+teste_marcacoes = y[-9:]
 
 modelo = MultinomialNB()
 modelo.fit(x, y)
