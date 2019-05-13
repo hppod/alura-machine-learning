@@ -1,3 +1,5 @@
+# Abordagem inicial: 90% para treino e 10% para teste: taxa de acerto 88.9%
+
 from sklearn.naive_bayes import MultinomialNB
 from dados import carregar_acessos
 
