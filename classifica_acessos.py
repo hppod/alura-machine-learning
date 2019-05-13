@@ -1,6 +1,6 @@
+from sklearn.naive_bayes import MultinomialNB
 from dados import carregar_acessos
 x, y = carregar_acessos()
 
-from sklearn.naive_bayes import MultinomialNB
 modelo = MultinomialNB()
-modelo.fit(x,y)
+modelo.fit(x, y)
