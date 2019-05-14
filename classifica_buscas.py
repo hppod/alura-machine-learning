@@ -2,10 +2,8 @@ import pandas as pd
 
 df = pd.read_csv('busca.csv')
 
-x = df[['home', 'busca', 'logado']]
-y = df['comprou']
+x_df = df[['home', 'busca', 'logado']]
+y_df = df['comprou']
 
-xDummies = pd.get_dummies(x)
-yDummies = pd.get_dummies(y)
-
-print(xDummies)
+xDummies_df = pd.get_dummies(x_df)
+yDummies_df = y_df
