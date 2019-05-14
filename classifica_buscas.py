@@ -5,5 +5,7 @@ df = pd.read_csv('busca.csv')
 x = df[['home', 'busca', 'logado']]
 y = df['comprou']
 
-print(x)
-print(y)
+xDummies = pd.get_dummies(x)
+yDummies = pd.get_dummies(y)
+
+print(xDummies)
